@@ -1,0 +1,180 @@
+.front {
+    width: 300px;
+    margin: auto;
+    background-color: #f0f0f0;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.seatCharts-cell {
+    color: #182C4E;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    margin: 3px;
+    float: left;
+    text-align: center;
+    outline: none;
+    font-size: 13px;
+}
+
+div.seatCharts-seat {
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.seatCharts-row {
+    height: 35px;
+    padding-left: 20%;
+}
+
+div.seatCharts-seat.available {
+    background-color: #efefef;
+}
+
+/*PARROT COLOURS*/
+
+div.seatCharts-seat.four {
+    background-color: #5E5959
+}
+
+div.seatCharts-seat.five {
+    background-color: #F27A5E
+}
+
+div.seatCharts-seat.one {
+    background-color: #F2275D
+}
+
+div.seatCharts-seat.two {
+    background-color: #50BF8B
+}
+
+div.seatCharts-seat.three {
+    background-color: #F2D785
+}
+
+div.seatCharts-seat.other {
+    background-color: #C3F294
+}
+
+/*NUSMODS COLOURS
+div.seatCharts-seat.four{background-color: #FFF930}
+div.seatCharts-seat.five{background-color: #F28322}
+div.seatCharts-seat.one{background-color: #94D930}
+div.seatCharts-seat.two{background-color: #66D9EF}
+div.seatCharts-seat.three{background-color: #F59FD4}
+div.seatCharts-seat.other{background-color: #A37EF2}
+*/
+
+/*FLOWER COLOURS
+div.seatCharts-seat.four{background-color: #F26B83}
+div.seatCharts-seat.five{background-color: #0F501D}
+div.seatCharts-seat.one{background-color: #038C73}
+div.seatCharts-seat.two{background-color: #FFE241}
+div.seatCharts-seat.three{background-color: #50D2D9}
+div.seatCharts-seat.other{background-color: #A92A52}
+*/
+
+/*PASTEL COLOURS
+div.seatCharts-seat.four{background-color: #d2a6ff}
+div.seatCharts-seat.five{background-color: #fff400}
+div.seatCharts-seat.one{background-color: #fdc04d}
+div.seatCharts-seat.two{background-color: #83f4b9 }
+div.seatCharts-seat.three{background-color: #49b5f0}
+div.seatCharts-seat.other{background-color: #f09aa9}
+*/
+
+div.seatCharts-seat.focused {
+    background-color: #76B474;
+    border: none;
+}
+
+div.seatCharts-seat.selected {
+    background-color: #009900;
+}
+
+div.seatCharts-seat.unavailable {
+    background-color: #472B34;
+    cursor: not-allowed;
+}
+
+div.seatCharts-container {
+    background-color: white;
+    border-right: 1px dotted #adadad;
+    width: 100%;
+    padding: 20px;
+    float: left;
+}
+
+div.seatCharts-legend {
+    padding-left: 0px;
+    position: absolute;
+    bottom: 16px;
+}
+
+div.seatCharts-row {
+    padding-left: 20%
+}
+
+ul.seatCharts-legendList {
+    padding-left: 0px;
+}
+
+.seatCharts-legendItem {
+    float: left;
+    width: 90px;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+span.seatCharts-legendDescription {
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+.checkout-button {
+    display: block;
+    width: 80px;
+    height: 24px;
+    line-height: 20px;
+    margin: 10px auto;
+    border: 1px solid #999;
+    font-size: 14px;
+    cursor: pointer
+}
+
+#selected-seats {
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: none;
+    width: 200px;
+}
+
+#selected-seats li {
+    float: left;
+    width: 72px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #d3d3d3;
+    background: #f7f7f7;
+    margin: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center
+}
+
+/*div.seatCharts-seat.available.handicap {
+	background-color: yellow;
+}*/
+
+.seating-area {
+    magin: auto;
+}
+
+}

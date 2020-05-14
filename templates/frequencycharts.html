@@ -1,0 +1,55 @@
+
+{% extends "seat_buy_order_home.html" %}
+
+{% block head %}
+{{ super() }}
+<script type="text/javascript">
+      let hall = {{name}};
+      let obj =JSON.parse('{{ test | tojson | safe}}')
+      let max='{{maxi}}'
+      let min ='{{mini}}'
+  </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/seat_heatmap.js') }}">
+      </script>
+{% endblock %}
+
+
+{% block body %}
+{% include '_navbar.html' %}
+<section>
+  <div class="column-title" style="padding-top: 100px"> Seat Popularity</div>
+</section>
+
+
+<!--/Hall Selection Options/-->
+<nav class="navbar navbar-trans navbar-expand-md mr-auto navbar-selection" id="mainNav">
+  <div class="dropdown">
+    <button onclick="myFunction('theatre')" class="dropbtn">Select Hall</button>
+    <div id="theatre" class="dropdown-content">
+      <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" id="myInput" onkeyup="filterFunction()">
+      <!-- //sample option: -->
+      <!-- <a href="/rateofbuying/sample">Sample </a> -->
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+
+<div class="column-subtitle"> {{hall}} </div>
+<div class="column" style="background-color:white">
+  <strong>Legend:</strong> Popularity (Based on which percentile(p) range each seat belongs to)
+    <ul class="frequencylegend">
+      <li><span style="background-color: #FFFFCB"></span>   ≤20p </li>
+      <li><span style="background-color: #FDD976"></span>   20-40p</li>
+      <li><span style="background-color: #FA4E2A"></span>   40-60p</li>
+      <li><span style="background-color: #F23A29"></span>   60-80p</li>
+      <li><span style="background-color: #A60A33"></span>   ≥80p</li>
+    </ul>
+</div>
+<div style="text-align:center; font-size:20px;">FRONT </div>
+  <div align="left" id="seat-map" style="max-width:auto; border-left:200px, solid, white;"></div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/seat_frequency.js') }}"></script>
+
+{% endblock %}

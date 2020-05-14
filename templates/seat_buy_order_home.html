@@ -1,0 +1,52 @@
+
+
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-seat selection.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Lido_seat_map.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Payalebar_seat_map.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Seletar_seat_map.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Waterway_Point_seat_map.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Nex_seat_map.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Jewel_seat_map.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hall Seating Plans/Jcube_seat_map.js') }}"></script>
+
+
+{% endblock %}
+
+
+<body>
+{% block body %}
+
+{% include '_navbar.html' %}
+
+<section>
+  <div class="column-title" style="padding-top: 100px"> Seat Buying Order</div>
+</section>
+
+<div class="column" style="background-color:white">
+First, choose your favourite movie down below to see its seat buying order for different halls and timings!
+</div>
+
+
+  <!--/Options Selection Options/-->
+
+  <!--/Movie Selection Options/-->
+  <nav class="navbar navbar-trans navbar-expand-md mr-auto navbar-selection"  id="mainNav">
+    <div class="dropdown" >
+      <button onclick="myFunction('movieName')" class="dropbtn" >Select Movie</button>
+      <div id="movieName" class="dropdown-content">
+        <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" id="myInput" onkeyup="filterFunction('movieName')">
+      </div>
+    </div>
+  </nav>
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/seat_buy_order.js') }}"></script>
+</body>
+{% endblock %}

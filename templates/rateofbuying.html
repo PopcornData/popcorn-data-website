@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  {% extends "layout.html" %} 
+</head>
+
+<body>
+  
+  {% block body %} 
+  {% include '_navbar.html' %} <!--/ Nav End /-->
+
+
+  <div class="space-below-nav" style="background-color:white; height:100px;">
+  </div>
+
+
+  <div class="column-title" style="background-color:white">
+    Rate of Ticket Buying
+  </div>
+  <!--/ Movie Selection /-->
+
+
+  <nav class="navbar navbar-trans navbar-expand-md mr-auto navbar-selection" id="mainNav">
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Select Movie</button>
+
+      <div class="dropdown-content" id="myDropdown">
+        <input id="myInput" onkeyup="filterFunction()" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome"> 
+        <!-- //sample option: -->
+         <!-- <a href="/rateofbuying/sample">Sample </a> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron" style="background-color:white">
+    <div class="col-md-auto column">
+      This graph provides a comprehensive overview of the <strong>rate at which ticket seats were
+      bought</strong> . It accumulates data for <strong>all showtimes for a movie</strong> , for
+      the 20 days of its showing. The horizontal axis represents <strong>(t-days) left to each
+      showtime while the vertical axis is the cummulated number of tickets bought</strong> . Each
+      line shows the number of tickets bought by customers 0-7 days before a movie showtime, with
+      data accumulated for all showtimes within the indicated time period. Comparing these lines
+      can show movies that slowly lost popularity after an initially fast sales or movies that had
+      consistent sales over the screening time.
+
+      <div class="col-md-auto column">
+        Use the toolbar on the right to toggle the graph !
+      </div>
+    </div>
+
+
+    <div class="column-subtitle">
+      {{name}}
+    </div>
+
+
+    <div class="graphplace" style="text-align:center;">
+      <div style="display:inline-block;">
+        {% for plot in plots %} 
+        {% for part in plot %} 
+        {{part | safe}} 
+        {% endfor %} 
+        {% endfor %}
+      </div>
+    </div>
+    <!-- partial -->
+    <!-- SCRIPTS -->
+    <script>
+
+
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    //ADDING OPTIONS FROM ARRAY
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+
+    var toppings = ["1917",
+    "A Moment of Happiness  (M)",
+    "A Shaun The Sheep Movie: Farmageddon",
+    "All's Well End's Well 2020 (M)",
+    "An Easy Girl (F)",
+    "Bad Boys For Life",
+    "Bernie The Dolphin 2",
+    "Cats",
+    "Champions",
+    "Darbar (T)",
+    "Dark Waters",
+    "Disney's Frozen 2",
+    "Disney's Frozen Sing-A-Long",
+    "Disney`s Frozen 2 Sing-A-Long",
+    "Distinction",
+    "Dolittle",
+    "Enter The Fat Dragon (M)",
+    "Innocent Witness",
+    "Intelligent Lives",
+    "IP MAN 4: THE FINALE (M)",
+    "Jojo Rabbit",
+    "Judy",
+    "Jumanji: The Next Level",
+    "Kumanthong (VIETNAMESE)",
+    "My Brother Chases Dinosaurs",
+    "Official Secrets",
+    "Only Cloud Knows (M)",
+    "Perfect Nanny (F)",
+    "Playing With Fire",
+    "Primal",
+    "Richard Jewell",
+    "Secret Zoo (K)",
+    "Sheep Without A Shepherd (M)",
+    "Someone, Somewhere (F)",
+    "Spies In Disguise",
+    "Star Wars: The Rise Of Skywalker",
+    "Start Up (K)",
+    "The Aeronauts",
+    "The Farewell",
+    "The Grand Grandmaster (M)",
+    "The Grudge",
+    "The Peanut Butter Falcon",
+    "The Wolf Hour",
+    "Underwater"];
+
+    var ul = document.querySelector("#myDropdown");
+
+    for (var i = 0; i < toppings.length; i++) {
+      var topping = toppings[i];
+
+      var aItem = document.createElement("a");
+
+      aItem.textContent = topping;
+      aItem.href = "/rateofbuying/"+ topping;
+
+      ul.appendChild(aItem);
+    }
+
+    </script> 
+    
+    {% endblock %}
+  </div>
+</body>
+</html>

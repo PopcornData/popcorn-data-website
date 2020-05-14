@@ -1,0 +1,93 @@
+
+{% extends "seat_buy_order_home.html" %}
+
+{% block head %}
+{{ super() }}
+<script type="text/javascript">
+var movieName = {{ movie|tojson}};
+var data ={{data|safe}};
+</script>
+
+
+{% endblock %}
+
+
+
+
+{% block body %}
+
+{% include "_navbar.html"%}
+<div class="space-below-nav" style="background-color:white; height:100px;">  </div>
+<div class="column-title"> Seat Buying Order</div>
+
+<div class="column-subtitle" style="background-color:white"> Movie: {{movie}} </div>
+<div class="col-md-auto col-md-offset-auto column" style="background-color:white">
+Choose a theatre, hall, date and time to see the seat buying order.
+</div>
+
+
+<!--/Theatre Selection Options/-->
+<nav class="navbar navbar-trans navbar-expand-md mr-auto navbar-selection" id="mainNav">
+<span>
+    <div class="dropdown" >
+      <button onclick="myFunction('hallName')" class="dropbtn">Select Theatre</button>
+      <div id="hallName" class="dropdown-content">
+        <select id="hallOptions" onchange="setHallNo();" class="select-css">
+        <option selected disabled> Select Theatre </option>
+      </select>
+      </div>
+    </div>
+
+<!--/Hall Selection Options/-->
+    <div class="dropdown">
+      <button onclick="myFunction('hallNoName')" class="dropbtn">Select Hall</button>
+      <div id="hallNoName" class="dropdown-content">
+        <select id="hallNoOptions" onblur="setDates()" class="select-css">
+        <option selected disabled> Select Hall </option>
+      </select>
+      </div>
+    </div>
+
+<!--/Date Selection Options/-->
+    <div class="dropdown">
+      <button onclick="myFunction('dateName')" class="dropbtn">Select Date</button>
+      <div id="dateName" class="dropdown-content">
+        <select id="dateOptions" onblur="setTimes()" class="select-css">
+        <option selected disabled> Select Date </option>
+      </select>
+      </div>
+    </div>
+
+<!--/Time Selection Options/-->
+    <div class="dropdown">
+      <button onclick="myFunction('time')" class="dropbtn">Select Time</button>
+      <div id="time" class="dropdown-content">
+        <select id="timeOptions" onblur="getTimes()" class="select-css">
+        <option selected disabled> Select Time </option>
+      </select>
+      </div>
+    </div>
+
+  <button id="Go" onclick="finishSelection()" class="dropbtn">Go!</button>
+  </span>
+</nav>
+
+<div class="col-md-auto col-md-offset-auto column" style="background-color:white"> or </div>
+
+  <!--/Movie Selection Options/-->
+  <nav class="navbar navbar-trans navbar-expand-md mr-auto navbar-selection" id="mainNav">
+    <div class="dropdown">
+      <button onclick="myFunction('movieName')" class="dropbtn">Select Another Movie</button>
+      <div id="movieName" class="dropdown-content">
+        <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" id="myInput" onkeyup="filterFunction('movieName')">
+      </div>
+    </div>
+  </nav>
+<!--   SEAT MAP TO SHOW
+ <div style="text-align:center;">FRONT </div>
+<div id="seat-map"></div> -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/seat_buy_order.js') }}"></script>
+
+
+
+{% endblock %}

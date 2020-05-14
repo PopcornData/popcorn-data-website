@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <!-- css links -->
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="{{url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"  href="{{url_for('static', filename='css/button.css') }}">
+
+    <!-- js links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>  
+    
+    <!-- import static js files -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/typed.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/buttonMapping.js') }}"></script>
+    {% endblock %}
+
+  </head>
+  <body>
+
+        {% block body %}
+
+        {% endblock %}
+
+  </body>
+</html>
