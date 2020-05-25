@@ -3,6 +3,7 @@
   <head>
     {% block head %}
     <!-- css links -->
+
     <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
@@ -18,6 +19,15 @@
     <!-- import static js files -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/typed.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/buttonMapping.js') }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166865582-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-166865582-1');
+    </script>
     {% endblock %}
 
   </head>
