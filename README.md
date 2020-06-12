@@ -47,10 +47,11 @@ Deployed on [Heroku](https://www.heroku.com)
 ## Built With
 * [Bootstrap](https://getbootstrap.com)
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Google Data Studio](https://datastudio.google.com/)
 * [jQuery](https://jquery.com)
 * [jQuery Seat Charts](https://github.com/mateuszmarkowski/jQuery-Seat-Charts)
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-* [Pandas](https://pandas.pydata.org/)
+
 
 ## Team
 * [Noel Mathew Isaac](https://github.com/noelmathewisaac)
@@ -61,5 +62,6 @@ Deployed on [Heroku](https://www.heroku.com)
 * [DevFolio](https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/)
 * [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com/)
+* [Pandas](https://pandas.pydata.org/)
 
 
