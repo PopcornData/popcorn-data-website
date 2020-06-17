@@ -7,7 +7,9 @@
   <h1 align="center">PopcornData</h1>
 
   <p align="center">
-   <img src="https://travis-ci.com/PopcornData/popcorn-data-website.svg?branch=master">
+  <a href="https://travis-ci.com/PopcornData/popcorn-data-website">
+    <img src="https://travis-ci.com/PopcornData/popcorn-data-website.svg?branch=master">
+  </a>
   <br />
     A project to analyse and visualise cinema seating patterns
     <br />
