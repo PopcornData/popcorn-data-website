@@ -1,12 +1,14 @@
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://popcorn-data.herokuapp.com/">
     <img src="static/images/popcornDataLogo.png" alt="Logo" width="150" height="150">
   </a>
 
   <h1 align="center">PopcornData</h1>
 
   <p align="center">
+   <img src="https://travis-ci.com/PopcornData/popcorn-data-website.svg?branch=master">
+  <br />
     A project to analyse and visualise cinema seating patterns
     <br />
     <br />
