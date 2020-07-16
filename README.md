@@ -23,7 +23,7 @@
 
 ## About
 PopcornData is a website made to analyse movie trends in Singapore — from which seats people prefer to the way they like to watch different movies. 
-The required data was scraped from the website of Shaw Theatres, one of the biggest cinema chains in Singapore, using a webscraper we built with Python and Selenium ([shaw-scraper](https://github.com/PopcornData/shaw-scraper))
+The data used was scraped from the website of Shaw Theatres, one of the biggest cinema chains in Singapore, using a webscraper we built with Python and Selenium ([shaw-scraper](https://github.com/PopcornData/shaw-scraper))
 
 The data scraped was for January 2020 and using it we were able to build interesting visualisations about how people watched different movies, at different halls, theatres and timings! 
 
