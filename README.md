@@ -14,9 +14,13 @@
     A project to analyse and visualise cinema seating patterns
     <br />
     <br />
-    <a href="https://popcorn-data.herokuapp.com/">Website</a>
+    <b>
+      <a href="https://popcorn-data.herokuapp.com/">Website</a>
+    </b>
     ·
+    <b>
     <a href="https://medium.com/analytics-vidhya/popcorn-data-analysing-cinema-seating-patterns-part-ii-987fbde9d363">Medium Article</a>
+    </b>
   </p>
 </p>
 
