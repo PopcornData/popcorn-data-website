@@ -33,10 +33,10 @@ The data scraped was for January 2020 and using it we were able to build interes
 
 Some unique visualisations include:
 
-* **Heat maps** to show the most popular seats
+* [**Heat maps**](https://popcorn-data.herokuapp.com/frequencycharts/JCube%20Hall%205) to show the most popular seats
 <img src="https://github.com/PopcornData/popcorn-data-website/blob/master/static/images/frequencyChart.png"/>
 
-* **Animations** to show the order in which seats were bought
+* [**Animations**](https://popcorn-data.herokuapp.com/seat-buy-order/Jumanji:%20The%20Next%20Level/Nex/nex%20Hall%206/27%20Jan%202020/16:10) to show the order in which seats were bought
 <img src="https://github.com/PopcornData/popcorn-data-website/blob/master/static/images/seat_buy_order_gif.gif"/>
 
 
