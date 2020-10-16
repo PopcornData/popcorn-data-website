@@ -17,7 +17,7 @@
     <b>
       <a href="https://popcorn-data.herokuapp.com/">Website</a>
     </b>
-    .
+    <b>·</b>
     <b>
     <a href="https://medium.com/analytics-vidhya/popcorn-data-analysing-cinema-seating-patterns-part-ii-987fbde9d363">Medium Article</a>
     </b>
