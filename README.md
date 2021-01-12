@@ -60,7 +60,43 @@ Deployed on [Heroku](https://www.heroku.com)
 * [jQuery Seat Charts](https://github.com/mateuszmarkowski/jQuery-Seat-Charts)
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
+## Installation
+1. Clone the repo and navigate to the correct folder
 
+  ```
+  git clone https://github.com/PopcornData/popcorn-data-website.git
+  cd popcorn-data-website
+  ```
+
+2. Create a virtual environment
+
+  ```
+  pip install virtualenv #Run this if you don't have virtualenv installed
+  virtualenv env
+  ```
+
+3. Activate the virtual environment
+
+  ```
+  env\Scripts\activate #Windows
+  source env/lib/activate #Mac/Linux
+  ```
+  
+4. Install the project requirements
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+5. Start the Flask app
+
+  ```
+  python mainapp.py
+  ```
+6. Go to localhost:5000 on your browser to view the webapp
+
+  
+  
 ## Team
 * [Noel Mathew Isaac](https://github.com/noelmathewisaac)
 * [Vanshiqa Agrawal](https://github.com/vanshiqa)
