@@ -1,0 +1,21 @@
+{
+  "builds": [
+    {
+      "src": "mainapp.py",
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": [
+          "templates/**",
+          "static/**",
+          "Movie Seat Data.xlsx"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "mainapp.py"
+    }
+  ]
+}

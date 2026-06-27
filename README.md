@@ -1,21 +1,17 @@
 <br />
 <p align="center">
-  <a href="https://popcorn-data.herokuapp.com/">
+  <a href="https://popcorn-data.vercel.app/">
     <img src="static/images/popcornDataLogo.png" alt="Logo" width="150" height="150">
   </a>
 
   <h1 align="center">PopcornData</h1>
 
   <p align="center">
-  <a href="https://travis-ci.com/PopcornData/popcorn-data-website">
-    <img src="https://travis-ci.com/PopcornData/popcorn-data-website.svg?branch=master">
-  </a>
-  <br />
     A project to analyse and visualise cinema seating patterns
     <br />
     <br />
     <b>
-      <a href="https://popcorn-data.herokuapp.com/">Website</a>
+      <a href="https://popcorn-data.vercel.app/">Website</a>
     </b>
     <b>·</b>
     <b>
@@ -33,10 +29,10 @@ The data scraped was for January 2020 and using it we were able to build interes
 
 Some unique visualisations include:
 
-* [**Heat maps**](https://popcorn-data.herokuapp.com/frequencycharts/JCube%20Hall%205) to show the most popular seats
+* [**Heat maps**](https://popcorn-data.vercel.app/frequencycharts/JCube%20Hall%205) to show the most popular seats
 <img src="https://github.com/PopcornData/popcorn-data-website/blob/master/static/images/frequencyChart.png"/>
 
-* [**Animations**](https://popcorn-data.herokuapp.com/seat-buy-order/Jumanji:%20The%20Next%20Level/Nex/nex%20Hall%206/27%20Jan%202020/16:10) to show the order in which seats were bought
+* [**Animations**](https://popcorn-data.vercel.app/seat-buy-order/Jumanji:%20The%20Next%20Level/Nex/nex%20Hall%206/27%20Jan%202020/16:10) to show the order in which seats were bought
 <img src="https://github.com/PopcornData/popcorn-data-website/blob/master/static/images/seat_buy_order_gif.gif"/>
 
 
@@ -50,7 +46,7 @@ https://towardsdatascience.com/popcorn-data-analysing-cinema-seating-patterns-pa
 https://medium.com/analytics-vidhya/popcorn-data-analysing-cinema-seating-patterns-part-ii-987fbde9d363
 
 ## Deployment
-Deployed on [Heroku](https://www.heroku.com)
+Deployed on [Vercel](https://vercel.com)
 
 ## Built With
 * [Bootstrap](https://getbootstrap.com)
