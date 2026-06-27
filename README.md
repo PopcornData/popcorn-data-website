@@ -40,7 +40,7 @@ Some unique visualisations include:
 We documented our project journey in these articles:
 
 **Obtaining the Data**<br>
-https://towardsdatascience.com/popcorn-data-analysing-cinema-seating-patterns-part-1-a0b2a5c2c19a
+https://medium.com/@noelmathewisaac/popcorn-data-analysing-cinema-seating-patterns-part-1-a0b2a5c2c19a
 
 **Analysing and Visualising the Data**<br>
 https://medium.com/analytics-vidhya/popcorn-data-analysing-cinema-seating-patterns-part-ii-987fbde9d363
