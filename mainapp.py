@@ -133,7 +133,7 @@ def hall_seat_options():
         mini=v
       if(v>maxi):
         maxi=v
-    return render_template('/frequencycharts.html',name="Lido Hall 1",test=freq_data,maxi=maxi,mini=mini)
+    return render_template('/frequencycharts.html',name="Lido Hall 1".lower().replace(' ','_'),test=freq_data,maxi=maxi,mini=mini, hall="Lido Hall 1")
 
 
 @app.route('/rateofbuying/')

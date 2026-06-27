@@ -50,7 +50,7 @@ function myFunction(name) {
 var selectedHall, selectedHallNo, selectedDate, selectedTime;
 var movieDict, hallDict, hallNoDict, dateDict;
 var hallUl = document.getElementById("hallOptions"); //select this id
-movieDict = data[movie]; //contains data for that movie
+movieDict = data[movieName]; //contains data for the selected movie
 var hallArr = Object.keys(movieDict);
 //CREATE OPTIONS FOR THE HALL BASED ON MOVIE
 for (var i = 0; i < hallArr.length; i++) {
