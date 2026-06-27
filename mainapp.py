@@ -59,7 +59,7 @@ def creategraph(name):
     """Function to create bokeh graph"""
     ls = timeData(name)[0] + timeData(name)[1] + timeData(name)[2]
     maximum = min([max(ls), 20])
-    mygraph = figure(width=1000, height=750, title=name, sizing_mode="scale_width")
+    mygraph = figure(width=1000, height=750, title=name)
     mygraph.background_fill_color = "black"
     mygraph.xgrid.grid_line_color = None
     mygraph.ygrid.grid_line_color = None
